@@ -6,3 +6,4 @@ scoreboard objectives add isActive dummy
 #team color stuff
 scoreboard objectives add color dummy
 scoreboard objectives add colorBuffer dummy
+scoreboard objectives add seekers dummy
