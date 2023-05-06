@@ -26,10 +26,16 @@ bossbar add hide:timer "Timer"
 bossbar set hide:timer color red
 bossbar set hide:timer style progress
 bossbar set hide:timer max 10800
-bossbar set hide:grace players @a[tag=!exempt]
+bossbar set hide:timer players @a[tag=!exempt]
 bossbar set hide:timer value 10800
 bossbar set hide:timer visible false
 
 #color buffer
 execute as @a run scoreboard players operation @s color_buffer = @s color
+
+#set team colors
+scoreboard players set @a[tag=seeker] color -6
+scoreboard players set @a[tag=hider] color -12
+#seekercount
+scoreboard players set count seekers 1
 

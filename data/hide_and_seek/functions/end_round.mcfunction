@@ -16,3 +16,8 @@ scoreboard players set hide_timer timer 10800
 bossbar remove hide:grace
 #bossbar for hiding timer
 bossbar remove hide:timer
+
+#reset colors
+execute as @a run scoreboard players operation @s color = @s color_buffer
+#reset seeker count
+scoreboard players set count seekers 0
