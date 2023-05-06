@@ -2,6 +2,7 @@
 scoreboard objectives add isActive dummy
 
 #timer for the round of the game
+scoreboard objectives add timer dummy
 
 #team color stuff
 scoreboard objectives add color dummy
