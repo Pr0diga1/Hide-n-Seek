@@ -19,15 +19,17 @@ bossbar add hide:grace "Hide"
 bossbar set hide:grace color green
 bossbar set hide:grace style progress
 bossbar set hide:grace max 1800
-bossbar set hide:grace players @a[tag=hider]
-bossbar set hide:grace players @a[tag=seeker]
+bossbar set hide:grace players @a[tag=!exempt]
 bossbar set hide:grace value 1800
 #bossbar for hiding timer
 bossbar add hide:timer "Timer"
 bossbar set hide:timer color red
 bossbar set hide:timer style progress
 bossbar set hide:timer max 10800
-bossbar set hide:timer players @a[tag=hider]
-bossbar set hide:timer players @a[tag=seeker]
+bossbar set hide:grace players @a[tag=!exempt]
 bossbar set hide:timer value 10800
 bossbar set hide:timer visible false
+
+#color buffer
+execute as @a run scoreboard players operation @s color_buffer = @s color
+

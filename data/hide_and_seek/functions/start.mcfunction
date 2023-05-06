@@ -7,3 +7,4 @@ scoreboard objectives add isActive dummy
 scoreboard objectives add color dummy
 scoreboard objectives add colorBuffer dummy
 scoreboard objectives add seekers dummy
+scoreboard objectives add color_buffer dummy
