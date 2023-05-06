@@ -1,0 +1,1 @@
+execute if score under active matches 0 run function oneshot_pack:general_functions/general_loop
