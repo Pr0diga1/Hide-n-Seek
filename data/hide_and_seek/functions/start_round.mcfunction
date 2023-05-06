@@ -27,6 +27,7 @@ bossbar add hide:timer "Select Your Class"
 bossbar set hide:timer color red
 bossbar set hide:timer style progress
 bossbar set hide:timer max 10800
-bossbar set hide:timer players @a[tag=gazebo]
+bossbar set hide:timer players @a[tag=hider]
+bossbar set hide:timer players @a[tag=seeker]
 bossbar set hide:timer value 10800
 bossbar set hide:timer visible false
