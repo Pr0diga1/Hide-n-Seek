@@ -7,3 +7,5 @@ execute if score count seekers matches ..2 run tag @s add seeker
 #titles when shot
 execute if score count seekers matches ..2 run title @s title {"text":"Grab a bow and find your friends!"}
 execute if score count seekers matches 3.. run title @s title {"text":"You're out! (haha)"}
+#update count seekers
+scoreboard players add count seekers 1
