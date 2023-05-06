@@ -23,7 +23,7 @@ bossbar set hide:grace players @a[tag=hider]
 bossbar set hide:grace players @a[tag=seeker]
 bossbar set hide:grace value 1800
 #bossbar for hiding timer
-bossbar add hide:timer "Select Your Class"
+bossbar add hide:timer "Timer"
 bossbar set hide:timer color red
 bossbar set hide:timer style progress
 bossbar set hide:timer max 10800
