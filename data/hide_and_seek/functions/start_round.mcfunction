@@ -5,7 +5,7 @@ scoreboard players set HideNSeek isActive 1
 tag @p add seeker
 
 #give everone else hider (account for not playing)
-tag @a[tag=!seeker,tag=!exempt,x=100,y=98,z=-36,dx=-60,dy=-53,dz=64] add hider
+tag @a[tag=!seeker,tag=!exempt,x=100,y=98,z=-36,dx=-60,dy=-53,dz=-64] add hider
 
 #hider title
 title @a[tag=hider] title {"color": "green","text": "Hide!"}
@@ -21,21 +21,19 @@ bossbar add hide:grace "Hide"
 bossbar set hide:grace color green
 bossbar set hide:grace style progress
 bossbar set hide:grace max 1800
-bossbar set hide:grace players @a[tag=hider]
-bossbar set hide:grace players @a[tag=seeker]
+bossbar set hide:grace players @a
 bossbar set hide:grace value 1800
 #bossbar for hiding timer
 bossbar add hide:timer "Timer"
 bossbar set hide:timer color red
 bossbar set hide:timer style progress
 bossbar set hide:timer max 10800
-bossbar set hide:timer players @a[tag=hider]
-bossbar set hide:timer players @a[tag=seeker]
+bossbar set hide:timer players @a
 bossbar set hide:timer value 10800
 bossbar set hide:timer visible false
 
 #color buffer
-execute as @a run scoreboard players operation @s color_buffer = @s color
+execute as @a run scoreboard players operation @s color_buffer = @s colorbuffer
 
 #set team colors
 scoreboard players set @a[tag=seeker] color -6
